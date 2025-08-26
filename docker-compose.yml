@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  boberuabot:
+    build: .
+    image: boberuabot:latest
+    container_name: boberuabot
+    restart: always
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    # If you want to mount local files (e.g., live code reloads), uncomment:
+    # volumes:
+    #   - ./:/app
+
